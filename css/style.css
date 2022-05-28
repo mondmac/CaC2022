@@ -1,12 +1,13 @@
-*{    /* selector universal cambia a todos los elementos de mi pagina, le pone a todos margenes en cero*/
+*{   
     margin:0;
     padding:0;
     box-sizing:border-box;
+    text-decoration:none;
 }
 
 
 
-body {  /* selector de etiqueta "body"*/
+body {  
     background-color:#3c4241;
     font-family:"Montserrat", sans-serif;
 
@@ -28,29 +29,26 @@ header{
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /*separa los elementos del nav*/
+    justify-content: space-between;
     height: 50px;
     align-items: center;
     padding: 0px 50px;
-
+    
 }
 
 .navbar{
     display: flex;
-    gap: 30px; /*espacio entre cada elemento de la fila*/
+    gap: 30px; 
     list-style: none;
 
 }
 
-.navbar a:visited{
-    color: rgb(0, 0, 0);
-}
+
 
 .navbar a:hover{
     color: #b1dd00;
 }
 .navbar a {
-    
     position: relative;
     display: block;
     overflow: hidden;
@@ -99,7 +97,7 @@ nav{
     background-position: center;
     height: 600px;
     box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.511);
-    /*falta flex para el alto*/
+   
 }
 
 #banner-contacto{
@@ -108,7 +106,7 @@ nav{
         background-position: center;
         height: 600px;
         box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.511);
-        /*falta flex para el alto*/
+      
 }
 
 .d-flex{
@@ -248,53 +246,3 @@ nav{
 
 
 /* RESPONSIVE MEDIA QUERIES */
-
-@media screen and (max-width:180px){
-
-     
-}
-
-@media screen and (min-width: 500px) {
-    .container{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        /* text-align: center; */
-        justify-content: space-around;
-        border-radius: 50px;
-        font-size: 20px;
-        text-align: center;
-        position: relative;
-    }
-    .item-2{
-        padding:20px;
-    }
-    /* .container > div{
-        width: 10%;
-        
-    } */
-    .container div:first-child{
-        width: 90%;
-    }
-    .container div:nth-child(2){
-        max-width:20%;
-        min-width: 12%;
-    }
-  }
-
-
-@media screen and (min-width: 800px){
-    .container{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        /* text-align: center; */
-        justify-content: space-evenly;
-
-        border-radius: 50px;
-        font-size: 20px;
-     
-        text-align: center;
-        position: relative;
-  }
-}
